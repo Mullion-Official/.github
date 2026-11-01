@@ -65,9 +65,20 @@ MULLION 是一个开源的 **Android 原生自适应组件框架**。它不是�
 
 ## JitPack
 
-```kotlin
-repositories { maven("https://jitpack.io") }
+JitPack tag `1.0.0` is built and available as three modules:
 
+```kotlin
+// settings.gradle.kts
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+```
+
+```kotlin
 dependencies {
     implementation("com.github.Mullion-Official.Mullion-Android-Kotlin-Compose:mullion-core:1.0.0")
     implementation("com.github.Mullion-Official.Mullion-Android-Kotlin-Compose:mullion-compose:1.0.0")
@@ -75,7 +86,11 @@ dependencies {
 }
 ```
 
-`mullion-compose` / `mullion-view` transitively depend on `mullion-core`.
+- `mullion-compose` / `mullion-view` transitively depend on `mullion-core`.
+- Aggregate: `com.github.Mullion-Official:Mullion-Android-Kotlin-Compose:1.0.0`
+- `mullion-view` is Android-only; Compose screens only need `mullion-compose`.
+- JitPack: https://jitpack.io/#Mullion-Official/Mullion-Android-Kotlin-Compose/1.0.0
+
 
 ## 快速开始
 
