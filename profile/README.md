@@ -31,6 +31,7 @@ MULLION 是一个开源的 **Android 原生自适应组件框架**。它不是�
 - **Compose + View 双端**：`mullion-compose` 26 个组件；`mullion-view` 提供可混入既有 XML 工程的布局、玻璃 View 与 `ResourceScaler`。
 - **折叠屏是几何**：`HingeInfo` / `Foldables` 计算铰链与窗格；`DockedSheet` 永不跨缝，`FoldablePane` 在窗格不足时退回单栏。
 - **内容宽度优先**：`MultiPane` / `SearchLayout` 按实际约束决定是否收起预览/筛选栏，不让“窗口类到了 Large”把详情压成单字列。
+- **尺寸从上下文来**：`MullionDimens.forBp()` + `mullionDimens()` 派生页面、卡片、栏距；`PaneStrategy` 的 gutter 默认自动；预览用 `MullionViewport`，不把 375 / 760 / 1180 散落在 Screen 里。
 - **自适应明暗**：默认跟随系统。Compose 读 `MullionPalette` / `LocalMullionPalette`，View 读 `values` / `values-night`；不假设组件只存在于黑底。
 - **零反射**：断点阈值是 `const`，解析是纯函数，R8 可以内联折叠。
 
