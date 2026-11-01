@@ -63,6 +63,20 @@ MULLION 是一个开源的 **Android 原生自适应组件框架**。它不是�
 - [竖版 47 秒：浅色 / 深色](https://github.com/Mullion-Official/Mullion-Android-Kotlin-Compose/blob/main/docs/media/mullion-demo.mp4)
 - [大屏 52 秒：1280dp、Drawer、三栏](https://github.com/Mullion-Official/Mullion-Android-Kotlin-Compose/blob/main/docs/media/mullion-large-screen.mp4)
 
+## JitPack
+
+```kotlin
+repositories { maven("https://jitpack.io") }
+
+dependencies {
+    implementation("com.github.Mullion-Official.Mullion-Android-Kotlin-Compose:mullion-core:1.0.0")
+    implementation("com.github.Mullion-Official.Mullion-Android-Kotlin-Compose:mullion-compose:1.0.0")
+    implementation("com.github.Mullion-Official.Mullion-Android-Kotlin-Compose:mullion-view:1.0.0")
+}
+```
+
+`mullion-compose` / `mullion-view` transitively depend on `mullion-core`.
+
 ## 快速开始
 
 ```bash
