@@ -57,6 +57,11 @@ MULLION 是一个开源的 **Android 原生自适应组件框架**。它不是�
   <sub>折叠屏展开 673dp：Rail + 列表/详情两栏</sub>
 </div>
 
+## 演示
+
+- [竖版 47 秒：浅色 / 深色](https://github.com/Mullion-Official/Mullion-Android-Kotlin-Compose/blob/main/docs/media/mullion-demo.mp4)
+- [大屏 52 秒：1280dp、Drawer、三栏](https://github.com/Mullion-Official/Mullion-Android-Kotlin-Compose/blob/main/docs/media/mullion-large-screen.mp4)
+
 ## 快速开始
 
 ```bash
